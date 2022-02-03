@@ -356,7 +356,7 @@ NS_INLINE CGFloat radiansToDegrees(CGFloat radians) {
     BOOL hasVideoTracks = [asset tracksWithMediaType:AVMediaTypeVideo].count != 0;
 
     // The player has not yet initialized when it contains video tracks.
-    if (hasVideoTracks && height == CGSizeZero.height && width == CGSizeZero.width) {
+    if (/*hasVideoTracks &&*/ height == CGSizeZero.height && width == CGSizeZero.width) {
       return;
     }
     // The player may be initialized but still needs to determine the duration.
